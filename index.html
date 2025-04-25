@@ -129,10 +129,9 @@
     <table>
       <thead>
         <tr>
-          <th>Parcelas</th>
-          <th>Taxa (%)</th>
+          <th>Parcela</th>
           <th>Valor da Parcela</th>
-          <th>Total a Cobrar</th>
+          <th>Total</th>
         </tr>
       </thead>
       <tbody id="resultadoTabela"></tbody>
@@ -180,8 +179,7 @@
 
       const tr = document.createElement("tr");
       tr.innerHTML = `
-        <td>${parcelas}x</td>
-        <td>${taxa.toFixed(2)}%</td>
+        <td>${parcelas}</td>
         <td>${formatar(valorParcela)}</td>
         <td>${formatar(totalCobrar)}</td>
       `;
